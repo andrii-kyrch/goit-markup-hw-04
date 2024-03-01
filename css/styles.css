@@ -220,6 +220,17 @@ img {
   width: calc((100% - 72px) / 4);
 }
 
+.benefits-box-icon {
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-bottom: 8px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  background-color: #f4f4fd;
+}
+
 .benefits-list-title {
   margin-bottom: 8px;
   font-weight: 500;
