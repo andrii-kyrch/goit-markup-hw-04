@@ -72,6 +72,8 @@ img {
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .page-header .container {
@@ -170,6 +172,8 @@ img {
     ),
     url(../images/hero/bg-hero.jpeg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .page-title {
@@ -199,6 +203,7 @@ img {
   letter-spacing: 0.04em;
   color: #ffffff;
   background-color: #4d5ae5;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -221,10 +226,10 @@ img {
 }
 
 .benefits-box-icon {
+  height: 112px;
   display: flex;
   justify-content: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  align-items: center;
   margin-bottom: 8px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
@@ -284,7 +289,11 @@ img {
 .social-list {
   display: flex;
   justify-content: center;
-  column-gap: 24px;
+  gap: 24px;
+}
+
+.social-icon {
+  fill: #f4f4fd;
 }
 
 .social-link {
@@ -323,6 +332,7 @@ img {
 
 .portfolio-item {
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover {
@@ -370,6 +380,7 @@ img {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-content {
@@ -397,7 +408,7 @@ img {
 }
 
 .footer-social .social-list {
-  column-gap: 16px;
+  gap: 16px;
 }
 
 .footer-social .social-link:hover,
