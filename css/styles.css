@@ -168,7 +168,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/bg-hero.jpeg);
+    url(../images/hero/bg-hero.jpeg);
   background-size: cover;
 }
 
@@ -368,6 +368,14 @@ img {
   background-color: #2e2f42;
 }
 
+.footer-container {
+  display: flex;
+}
+
+.footer-content {
+  margin-right: 120px;
+}
+
 .page-footer .logo {
   display: inline-block;
   margin-bottom: 16px;
@@ -380,4 +388,19 @@ img {
 .footer-text {
   max-width: 264px;
   color: #f4f4fd;
+}
+
+.footer-social-title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.footer-social .social-list {
+  column-gap: 16px;
+}
+
+.footer-social .social-link:hover,
+.footer-social .social-link:focus {
+  background-color: #31d0aa;
 }
